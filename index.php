@@ -1,5 +1,4 @@
 <?php
-
 ?> 
 
 <!-- HTML -->
@@ -19,17 +18,24 @@
         <h1>
          <form action="./call.php" method="GET">
            <div class="mb-3">
-             <label for="exampleFormControlInput1" class="form-label" id="paragraph">Paragrafo</label>
-             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-             <div class="mb-3">
-               <label for="exampleFormControlTextarea1" class="form-label" id="censured-word">Parola da censurare</label>
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+             <label for="exampleFormControlInput1" class="form-label">Paragrafo</label>
+             <input type="text" class="form-control" name="paragraph" placeholder="Inserisci il paragrafo" required>
            </div>
+           <div class="mb-3">
+             <label for="exampleFormControlTextarea1" class="form-label">Parola da censurare</label>
+             <textarea class="form-control" name="censored-word" rows="3" placeholder="Inserisci la parola da censurare" required></textarea>
+           </div>
+           <!-- Bottoni per inviare e resettare il form -->
+           <button type="submit" class="btn btn-primary btn-xl">
+            Invia
+           </button>
+           <button type="reset" class="btn btn-warning btn-xl">
+            Reset
+           </button>
          </form>
         </h1>  
       </div>
     </div>
   </div>
 </body>
-</html> 
+</html>
