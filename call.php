@@ -1,6 +1,8 @@
 <?php
 // prendo il valore che si trova nella chiave paragraph 
 $paragrafo = $_GET["paragraph"];
+// Prendo il numeor dei caratteri nella stringa del campo paragrafo
+$paragraphCount = strlen($paragrafo);
 // prendo il valore che si trova nella chiave censored-word 
 $cens = $_GET["censored-word"];
 
@@ -25,11 +27,11 @@ $cens = $_GET["censored-word"];
 
         <!-- Stampo il paragrafo censurato con la sua relativa lunghezza -->
          <?php echo $paragrafo; ?> questo paragrafo ha una lunghezza di: 
-         <?php echo strlen($paragrafo) ?>;
+         <?php echo $paragraphCount ?>;
 
         <!-- Stampo il testo da censurare tramte **** -->
         Il paragrafo censurato è: <br>
-        <?php echo nl2br(htmlspecialchars($cens)); ?>;
+        <?php echo str_replace($cens,"", "****"); ?>
     
         </h1>  
       </div>
