@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(to right, #e0f7fa, #ffffff); 
+}
+
+.wrapper{
+    margin: 100px auto;
+    max-width: 600px;
+    min-height: 300px;
+    border: 2px solid black;
+    border-radius: 12px;
+}
+
+.col-12{
+    margin-left: 20px;
+    text-transform: uppercase;
+    font-family: fantasy;
+}

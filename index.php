@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Link Bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"> <!-- Link al file CSS -->
+  <link rel="stylesheet" href="./styles/style.css"> <!-- Link al file CSS -->
   <title>PHP BADWORDS</title>
 </head>
 <body>
